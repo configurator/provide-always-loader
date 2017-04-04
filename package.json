@@ -1,0 +1,28 @@
+{
+  "name": "provide-always-loader",
+  "version": "1.0.0",
+  "description": "provide-always-loader for webpack - provides a global into all modules, even ones without free variable usage",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/configurator/provide-always-loader.git"
+  },
+  "keywords": [
+    "webpack",
+	"loader",
+    "ProvidePlugin",
+    "global"
+  ],
+  "author": "Dor Kleiman (configurator)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/configurator/provide-always-loader/issues"
+  },
+  "homepage": "https://github.com/configurator/provide-always-loader#readme",
+  "peerDependencies": {
+    "webpack": "^2.3.3"
+  }
+}

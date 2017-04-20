@@ -12,8 +12,10 @@ module.exports = function ProvideAlwaysLoader(contents) {
 		return contents;
 	}
 
+	this.cacheable();
+
 	let globals = this.query.globals;
-	let initializers = globals.map(param => `(global||window).${param} = (global||window).${param} || {}`);
+	let initializers = globals.map(param => `global.${param} = global.${param} || {}`);
 
 	let prefix = `(function (/* injected by provide-always-loader */ ${globals.join(', ')}) {`;
 	let suffix = `})(/* injected by provide-always-loader */ ${initializers.join(', ')});`;

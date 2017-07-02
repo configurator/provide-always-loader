@@ -1,6 +1,6 @@
 {
   "name": "provide-always-loader",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "provide-always-loader for webpack - provides a global into all modules, even ones without free variable usage",
   "main": "index.js",
   "scripts": {
@@ -23,6 +23,6 @@
   },
   "homepage": "https://github.com/configurator/provide-always-loader#readme",
   "peerDependencies": {
-    "webpack": "^2.3.3"
+    "webpack": "^2.3.3 || ^3.0.0"
   }
 }
